@@ -1,0 +1,92 @@
+:root {
+  --color1: #44355b;
+  --color2: #31263e;
+  --color3: #221e22;
+  --color4: #f4edea;
+  --color5: #9be564;
+  --color6: #f4743b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(0deg, var(--color1), var(--color3));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-center {
+  width: 500px;
+  height: 600px;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 30px;
+  padding: 30px;
+  border: 1px solid var(--color4);
+  box-shadow: 0 0 75px black;
+}
+
+.display {
+  width: 100%;
+  height: auto;
+  text-align: right;
+  font-size: 3rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.button {
+  text-align: center;
+  margin: 4px;
+  width: calc(25% - 8px);
+  font-size: 40px;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  box-shadow: -5px 0 75px black;
+}
+
+.operator {
+  background-color: var(--color4);
+  color: black;
+}
+
+.equalBtn {
+  background-color: var(--color6);
+}
+
+h1 {
+  color: var(--color4);
+  height: 30px;
+}
+
+@media (max-width: 768px) {
+  .container-center {
+    width: 300px;
+    height: 400px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .button {
+    font-size: 1.5rem;
+  }
+  .display {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
